@@ -1,0 +1,148 @@
+1.
+
+
+TO drawRose
+color 4
+  REPEAT 18 [fd 25 rt 100 
+      fd 25 rt 80
+      fd 25 rt 100
+      fd 25 rt 170  ]
+  rt 90
+color 11 
+  fd 100
+END
+
+TO drawDragon
+  setpensize 2
+  pu
+  setpos [-100 -100]
+  pd
+  REPEAT 2 [rt 60 fd 50
+      rt 60 fd 25
+      rt 60 fd 50 
+      rt 120  ]
+  rt 60 fd 25
+  rt 60 fd 25
+  rt 120 fd 25
+  rt 60 fd 25
+  rt 60 fd 50
+  rt 60 fd 25
+  rt 60 fd 50
+  rt 120 fd 25
+  rt 60 fd 25
+  rt 60 fd 25
+  rt 120 
+  pu
+  setpos [-40 80]
+  pd
+  CIRCLE 30
+  pu
+  setpos [40 80]
+  pd
+  CIRCLE 30
+  pu
+  setpos [-60 -20]
+  pd
+
+  REPEAT 2 [ fd 50 lt 120
+      fd 50 lt 60]
+  lt 120 fd 50
+  lt 60 fd 25
+  lt 60 fd 25
+  lt 60 fd 50
+END
+drawDragon
+TO drawSantJordi
+  setpensize 4
+  drawRose
+  setpensize 2
+  drawDragon
+END
+
+pu rt 90 fd 200 lt 90 pd
+drawSantJordi
+ pu fd 100 pd
+
+
+2.
+
+
+TO drawRose
+color 4
+  REPEAT 18 [
+    FORWARD 50
+    RIGHT 100
+    FORWARD 50
+    RIGHT 80
+    FORWARD 50
+    RIGHT 100
+    FORWARD 50
+    RIGHT 170
+  ]
+color 11
+  RIGHT 90
+  FORWARD 200
+END
+
+TO drawDragon
+color 13
+  FORWARD 100
+  RIGHT 120
+  FORWARD 100
+  RIGHT 120
+  FORWARD 100
+  RIGHT 120
+END
+
+TO drawSantJordi
+  setpensize 4
+  drawRose
+  setpensize 2
+  drawDragon
+END
+ pu rt 90 fd 150 lt 90 pd
+drawSantJordi
+fd 50 lt 55 fd 150
+rt 105 fd 100 rt 45
+fd 150 rt 105 fd 60
+rt 100 fd 150
+lt 135 fd 160
+
+3.
+
+
+TO drawRose
+color 4
+  REPEAT 18 [
+    FORWARD 50
+    RIGHT 100
+    FORWARD 50
+    RIGHT 80
+    FORWARD 50
+    RIGHT 100
+    FORWARD 50
+    RIGHT 170
+  ]
+color 11
+  RIGHT 90
+  FORWARD 200
+END
+
+TO drawDragon
+color 13
+  FORWARD 100
+  RIGHT 120
+  FORWARD 100
+  RIGHT 120
+  FORWARD 100
+  RIGHT 120
+END
+
+TO drawSantJordi
+  setpensize 4
+  drawRose
+  setpensize 2
+  drawDragon
+END
+ pu rt 90 fd 150 lt 90 pd
+drawSantJordi
